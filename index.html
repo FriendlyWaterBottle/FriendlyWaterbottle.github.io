@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JD5</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">  
+            <div class="links">
+                <div class="nav-bar-link active-nav-bar">
+                    <a href="index.html">Home</style></a>
+                </div>  
+                <div class="nav-bar-link">
+                    <a href="Extra.html">Extra</a>
+                </div>    
+            </div>
+            <div class="rechts">
+                <div class="tekst">
+                    <div>Jongere democraten 5</div>
+                </div>
+            </div>
+        </div>  
+
+        <div class="content">
+            <div class="portfolio-items-wrapper">
+
+                <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19"><div class="portfolio-item-wrapper">
+                    <div class="portfolio-imagebackground" style="background-image:url(images/plaatje1.jpg)"></div>
+
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo2.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Informatie over het corona virus
+                        </div>
+                    </div>
+                </div></a>
+
+                
+                <a href="cultuur.html"><div class="portfolio-item-wrapper">
+                    <div class="portfolio-imagebackground" style="background-image:url(images/plaatje2.jpg)"></div>
+
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo1.png">
+                        </div>
+
+                        <div class="subtitle">
+                            onze standpunten over sociale zekerheid
+                        </div>
+                    </div>
+                </div> </a>
+
+                
+                <a href="https://www.rijksoverheid.nl/onderwerpen/verkiezingen"><div class="portfolio-item-wrapper">
+                    <div class="portfolio-imagebackground" style="background-image:url(images/plaatje3.jpg)"></div>
+
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo3.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Hoe je op ons kan stemmen
+                        </div>
+                    </div>
+                </div></a>
+
+                
+                <a href="stad.html"><div class="portfolio-item-wrapper">
+                    <div class="portfolio-imagebackground" style="background-image:url(images/plaatje4.jpg)"></div>
+
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo4.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Onze standpunten over onderwijs
+                        </div>
+                    </div>
+                </div></a>
+
+
+                <a href="te-doen.html"><div class="portfolio-item-wrapper">
+                    <div class="portfolio-imagebackground" style="background-image:url(images/plaatje5.jpg)"></div>
+
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo5.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Wie wij zijn en waar we voor staan
+                        </div>
+                    </div>
+                </div></a>
+
+
+                <a href="taal.html"><div class="portfolio-item-wrapper">
+                    <div class="portfolio-imagebackground" style="background-image:url(images/plaatje6.jpg)"></div>
+
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo6.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Onze standpunten over de gezondheidszorg
+                        </div>
+                    </div>
+                </div></a>
+
+                
+                <a href="vakantie.html"><div class="portfolio-item-wrapper">
+                    <div class="portfolio-imagebackground" style="background-image:url(images/plaatje7.jpg)"></div>
+
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo7.png">
+                        </div>
+
+                        <div class="subtitle">
+                           Hoe kom je met ons in contact
+                        </div>
+                    </div>
+                </div></a>
+
+                
+                <a href="k-pop.html"><div class="portfolio-item-wrapper">
+                    <div class="portfolio-imagebackground" style="background-image:url(images/plaatje8.jpg)"></div>
+
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo8.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Onze standpunten over armoede
+                        </div>
+                    </div>
+                </div></a>
+
+                
+                <a href="eten.html"><div class="portfolio-item-wrapper">
+                    <div class="portfolio-imagebackground" style="background-image:url(images/plaatje9.jpg)"></div>
+
+                    <div class="img-text">
+                        <div class="logo">
+                            <img src="images/logos/logo9.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Onze standpunten over werk en inkomen
+                        </div>
+                    </div>
+                </div></a>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken')
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken')
+        })
+    })
+</script>
+</html>
+  
